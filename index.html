@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synthesis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="snap-container">
+
+    <!-- Card 1: title over animated background -->
+    <section class="card card-title" id="title">
+      <!-- Drop the GIF at assets/images/ui/title.gif and it will show behind the text -->
+      <h1>SYNTHESIS</h1>
+    </section>
+
+    <!-- Card 2: quotes on the left, image on the right -->
+    <section class="card card-quotes" id="quotes">
+      <div class="quotes">
+        <blockquote>
+          <p>0x4576657279206461792C206D6F7468657220776F756C642061727269766520617420746865207261696C726F616420747261636B7320746F2068616E64206D652061207370617265207069656365206F662062726561642E2053686520776F756C642074656C6C206D6520746F20686F6C642069742C20666F72206C69666520697320612070726563696F757320676966742E0AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4920636572746966792074686174207468652072656D61696E696E672066756E647320666F72204D4B554C5452412023203135302077657265207061696420746F20FFFFFFFFFFFFF57686574686572207265616E696D6174696F6E206F662062696F6C6F676963616C206D61747465722063616E206265206163686965766564206F6E2061206D617373697665207363616C6520636F6E737469747574657320616E20FFFFFFFFFFFFFFFFFFFF54686520696E7665737469676174696F6E207368616C6C206465616C20776974682074687265652064697374696E63742C2074686F756768206C6F676963616C6C792072656C617465642C206973737565732E2045616368206F6620746865792063616E206265207075742061732061207175657374696F6E3A202831292057696C6C2074686579206F62657920636F6D6D616E643F202832292057696C6C2065787465726E616C20736F756C73207461696E74207468652070617469656E743F20283329205768617420697320746865206E6174757265206F662074686973206368616E67653F0AFFFFFFFFFFFFFFF497473206265656E203330206461797320776974686F7574206D6F746865722E20427574207368652077696C6C20636F6D65206261636B20736F6F6E2077697468206D6F72652062726561642E2041732073686520776F756C64207361792C206C69666520697320612070726563696F757320676966742E</p>
+        </blockquote>
+      </div>
+      <figure class="feature-image">
+        <img src="assets/images/the-lost-cemetery-james-christopher-hill.jpg" alt="A misty, overgrown cemetery at night with gnarled trees, a dirt path, and an angel statue">
+
+      </figure>
+    </section>
+
+    <!-- Card 3: patient entry form -->
+    <section class="card card-sql" id="sql">
+      <form class="entry-form" id="entry-form" autocomplete="off">
+        <p class="form-heading">מידע כאן (Information here)</p>
+
+        <div class="row">
+          <input type="text" name="patient_name" placeholder="שם המטופל (Patient name)" aria-label="Patient name">
+          <input type="text" name="causation" placeholder="גְּרִימָה (Causation)" aria-label="Causation">
+        </div>
+
+        <fieldset class="religion">
+          <legend class="visually-hidden">Religion</legend>
+          <label><input type="radio" name="religion" value="christian"> נוֹצְרִי (Christian)</label>
+          <label><input type="radio" name="religion" value="judaism"> יַהֲדוּת (Judaism)</label>
+          <label><input type="radio" name="religion" value="islam"> אִסְלָאם (Islam)</label>
+        </fieldset>
+
+        <div class="row">
+          <input type="text" name="longitude" placeholder="קו אורך (Longitude)" aria-label="Longitude">
+          <input type="text" name="latitude" placeholder="רוֹחַב (Latitude)" aria-label="Latitude">
+        </div>
+
+        <div class="row row-actions">
+          <input type="text" name="tip" class="tip" placeholder="עֵצָה (Tip)" aria-label="Tip">
+          <button type="submit" class="synthesis-btn">SYNTHESIS</button>
+          <span class="spinner" role="status" aria-label="Loading" hidden></span>
+          <span class="timer" hidden>30 MINUTES</span>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <audio id="bg-music" src="assets/audio/freesound_community-fur-elise-music-box-70375.mp3" loop preload="auto"></audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
